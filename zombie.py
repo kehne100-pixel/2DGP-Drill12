@@ -167,7 +167,7 @@ class Zombie:
 
         return BehaviorTree.RUNNING
 
-    # --- 순찰 위치 설정 ---
+
     def next_patrol_pos(self):
         x, y = self.patrol_points[self.patrol_index]
         self.patrol_index = (self.patrol_index + 1) % len(self.patrol_points)
