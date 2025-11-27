@@ -190,7 +190,7 @@ class Zombie:
                          Condition('좀비 공 >= 소년 공?', self.zombie_has_more_balls),
                          Action('소년에게 이동', self.move_to_boy))
 
-        # 도망
+
         flee = Sequence('도망',
                         Condition('좀비 공 < 소년 공?', self.zombie_has_less_balls),
                         Action('소년에게서 도망', self.flee_from_boy))
