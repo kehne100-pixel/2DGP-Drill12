@@ -174,7 +174,7 @@ class Zombie:
         self.tx, self.ty = x, y
         return BehaviorTree.SUCCESS
 
-    # --- Behavior Tree 빌드 ---
+
     def build_behavior_tree(self):
 
 
