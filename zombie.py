@@ -200,7 +200,7 @@ class Zombie:
                              cond_boy_near,
                              Selector('추적 or 도망', chase, flee))
 
-        # 최종 root
+
         root = Selector('최종 선택', boy_react, wander)
 
         self.bt = BehaviorTree(root)
