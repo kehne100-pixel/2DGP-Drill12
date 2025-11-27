@@ -26,7 +26,7 @@ class Zombie:
 
     images = None
 
-    # 이미지 로드
+
     def load_images(self):
         if Zombie.images is None:
             Zombie.images = {}
