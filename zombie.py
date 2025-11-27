@@ -177,12 +177,12 @@ class Zombie:
     # --- Behavior Tree 빌드 ---
     def build_behavior_tree(self):
 
-        # 기본 배회 : 랜덤 이동
+
         wander = Sequence('배회',
                           Action('랜덤 위치 설정', self.set_random_location),
                           Action('랜덤 위치로 이동', self.move_to))
 
-        # 소년 근처인지?
+
         cond_boy_near = Condition('소년이 7m 안인가?', self.if_boy_nearby, 7)
 
         # 추적
