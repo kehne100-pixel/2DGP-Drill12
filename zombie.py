@@ -154,12 +154,12 @@ class Zombie:
             return BehaviorTree.SUCCESS
         return BehaviorTree.RUNNING
 
-    # --- 도망 행동 ---
+
     def flee_from_boy(self):
         self.state = 'Walk'
         bx, by = common.boy.x, common.boy.y
 
-        # 도망은 반대 방향
+
         self.dir = math.atan2(self.y - by, self.x - bx)
         distance = RUN_SPEED_PPS * game_framework.frame_time
         self.x += math.cos(self.dir) * distance
