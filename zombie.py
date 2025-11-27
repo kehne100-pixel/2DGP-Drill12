@@ -138,14 +138,14 @@ class Zombie:
             return BehaviorTree.SUCCESS
         return BehaviorTree.FAIL
 
-    # --- 공 개수 비교 ---
+
     def zombie_has_more_balls(self):
         return BehaviorTree.SUCCESS if self.ball_count >= common.boy.ball_count else BehaviorTree.FAIL
 
     def zombie_has_less_balls(self):
         return BehaviorTree.SUCCESS if self.ball_count < common.boy.ball_count else BehaviorTree.FAIL
 
-    # --- 추적 행동 ---
+
     def move_to_boy(self, r=0.5):
         self.state = 'Walk'
         self.move_little_to(common.boy.x, common.boy.y)
