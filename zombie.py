@@ -132,7 +132,7 @@ class Zombie:
         self.ty = random.randint(100, 924)
         return BehaviorTree.SUCCESS
 
-    # 소년이 가까이 있는가?
+
     def if_boy_nearby(self, distance):
         if self.distance_less_than(self.x, self.y, common.boy.x, common.boy.y, distance):
             return BehaviorTree.SUCCESS
